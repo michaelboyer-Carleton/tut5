@@ -112,11 +112,10 @@ bool taArrayTest()
   taArray.add(myArray[6], 2);
   taArray.add(myArray[7], 4);
 
-  cout << "ADD SUCCESSFUL" << endl;
+
+  cout << "A segment fault happens when test.cc calls tester.initCapture(). I'm not sure why or how my submission causes this error." << endl;
 
   tester.initCapture();
-
-  cout << "OK TIME TO PRINT" << endl;
 
   for (int i = 0; i < 8; ++i)
   {

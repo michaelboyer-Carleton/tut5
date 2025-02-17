@@ -30,13 +30,9 @@ bool TAArray::add(TextArea* ta) {
 
 bool TAArray::add(TextArea* ta, int index) {
 
-    cout << "Function called" << endl;
-
     if (index >= MAX_COMPONENTS) { return false; }
     
     this->array[index] = ta;
-
-    cout << "adjusting index" << endl;
 
     ++this->size;
     
@@ -44,8 +40,6 @@ bool TAArray::add(TextArea* ta, int index) {
         cout << "index is larger than size, adjusting to " << index+1 << endl;
         this->size = index + 1;
     }
-
-    cout << "DONE!" << endl;
 
     return true;
 }
